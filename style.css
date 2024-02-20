@@ -1,0 +1,223 @@
+/*Código de los productos/
+Codigo del header*/
+body{
+    font-family:"Montserrat" sans-serif;
+}
+header{
+    background-color:darkgrey;
+    width: 100%;
+    height: 145px;
+    
+}
+.cajaNav{
+    width: 1400px;
+    position: relative;
+    margin: 0 auto; 
+}
+.titulo-barberia{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top: 65px;
+    text-transform: uppercase;
+    left: 0;
+}
+.logo{
+    position: relative;
+    width: 110px;
+    height: 155px;
+    left: 110px;
+    
+}
+nav{
+    position: absolute;
+    top: 65px;
+    right: 100px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{  
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/*Codigo del main*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+.productos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+.productos li:hover{
+    border-color: #C78C19;
+}
+.productos li:active{
+    border-color: #088C19;
+}
+.productos h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+.productos li:hover h2{
+    font-size: 30px;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*Codigo del pie de página*/
+footer{
+    text-align: center;
+    background: url(Images/bg.jpg);
+    padding: 20px;
+}
+.logo-pie{
+    width: 106px;
+    height: 150px;
+}
+.Copyright{
+    color: white;
+    font-size: 13px;
+    margin: 10px;
+}
+
+/*Código del formulario*/
+
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.Enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.Enviar:hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+table{
+    position: absolute;
+    margin: 40px 40px;
+    top: 150px;
+    right: 175px;
+
+}
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+td, th{
+    border: 1px solid #000000;
+    padding: 10px 40px;
+}
+
+@media (max-width:480px) {
+    /*RESPONSIVE FORMULARIO*/
+    .cajaNav,.productos,.productos li,main{
+        width: auto;
+    }  
+    nav{
+        top: 15px;
+        display: flex;
+        right: 20px;
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 19px;
+        display: block;
+    }
+    .productos{
+        padding: 30px;
+    }
+    .productos li{
+        display: block;
+        align-content: center;
+        margin:20px ;
+        
+    }
+    .titulo-barberia{
+        display: none;
+    }
+    .logo{
+        left: 0;
+    }
+    
+    /*RESPONSIVE CONTACTO*/
+    table{
+        width: 80vw;
+        position: relative;
+        margin: 20px auto;
+        top: 0;
+        right: 0;
+    }
+    form{
+        align-self: center;
+        padding: 0 0 0 10px;
+        margin: 0;
+    }
+    .boton{
+        text-align: center;
+    }
+    .Enviar{
+        margin: 0 auto;
+    }
+    td, th{
+        padding: 5px 20px;
+    }
+}

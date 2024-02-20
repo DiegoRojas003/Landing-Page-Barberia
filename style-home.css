@@ -1,0 +1,183 @@
+body{
+    font-family:"Montserrat" sans-serif;
+}
+header{
+    background-color:darkgrey;
+    width: 100%;
+    height: 145px;
+    
+}
+.cajaNav{
+    width: 1400px;
+    position: relative;
+    margin: 0 auto; 
+}
+.titulo-barberia{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top: 65px;
+    text-transform: uppercase;
+    left: 0;
+}
+.logo{
+    position: relative;
+    width: 110px;
+    height: 155px;
+    left: 110px;
+    
+}
+nav{
+    position: absolute;
+    top: 65px;
+    right: 100px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{  
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+/*Código del Home*/
+
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-style: normal;
+}
+.titulo-principal:hover{
+    color: rgba(0,0,0,0.3);
+}
+.img-utensilios{
+    width: 15%;
+    float: left;
+    margin: 0 10px 10px 0;
+    
+}
+.principal p{
+    margin: 0 0 1em;
+    font-weight: normal;
+    font-style: normal;
+    
+}
+.principal strong{
+    font-weight: 700;
+}
+.principal em{
+    font-style: italic;
+}
+.mapa{
+    padding: 3em 0;
+    
+}
+.mapa,p{
+    text-align: center;
+    margin: 0 0 2em;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 2em;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.ul-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5;
+}
+.items:first-child{
+    font-weight: bold;
+}
+.items::before{
+    content: "✵";
+}
+.imagenDiferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 8px #000000;
+}
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+    
+}
+.contenido-video{
+    
+    background:linear-gradient(#888888,black);
+}
+.video{
+    width: 560px;
+    align-content: center;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+/*Codigo del pie de página*/
+footer{
+    text-align: center;
+    background: url(Images/bg.jpg);
+    padding: 20px;
+}
+.logo-pie{
+    width: 106px;
+    height: 150px;
+}
+.Copyright{
+    color: white;
+    font-size: 13px;
+    margin: 10px;
+}
+@media (max-width:480px) {
+    .cajaNav,.principal, .mapa-contenido, .contenido-diferenciales, .video, nav{
+        width: auto;
+    }  
+
+    nav{
+        top: 15px;
+        display: flex;
+        right: 20px;
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 19px;
+        display: block;
+    }
+    .titulo-barberia{
+        display: none;
+    }
+    .logo{
+        left: 0;
+    }
+    video{
+        width: 490px;
+    }
+}
